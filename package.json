@@ -1,6 +1,9 @@
 {
   "name": "indecision-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "13.12.0"
+  },
   "main": "index.js",
   "author": "Thomas Gilmore",
   "license": "MIT",
