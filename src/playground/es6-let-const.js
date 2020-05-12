@@ -1,20 +1,22 @@
 var nameVar = 'Andrew';
+var nameVar = 'Mike';
+console.log('nameVar', nameVar);
 
-let nameLet = 'Jen';        
+let nameLet = 'Jen';
 nameLet = 'Julie';
-console.log(nameLet);
+console.log('nameLet', nameLet);
 
-const nameConst = 'Frank';      //cannot re-define
+const nameConst = 'Frank';
+console.log('nameConst', nameConst);
 
-console.log(nameConst);
+// Block scoping
 
-function PetName() {
-    var petName = 'HAL';
-    return petName;
+const fullName = 'Jen Mead';
+let firstName;
+
+if (fullName) {
+  firstName = fullName.split(' ')[0];
+  console.log(firstName);
 }
-var fullName = 'Andrew Mead';
 
-if(fullName) {
-    var firstName = fullName.split(' ')[0];
-    console.log(firstName);
-}
+console.log(firstName);
