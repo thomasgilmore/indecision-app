@@ -1,15 +1,16 @@
 import React from 'react';
 
-const Action = (props) => (
-  <div>
-    <button
-      className="big-button"
-      onClick={props.handlePick}
-      disabled={!props.hasOptions}
-    >
-      What should I do?
-      </button>
-  </div>
+// stateless functional component
+const Action = (p) => (
+        <div>
+            <button className="big-button"
+                onClick={p.handlePick}
+                disabled={!p.hasOptions}
+            >
+                What Should I Do?
+            </button>
+        </div>
 );
+
 
 export default Action;
